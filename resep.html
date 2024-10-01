@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VKELLOG'S</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/gaya.css" />
+    <link rel="stylesheet" href="css/resep.css" />
+  </head>
+  <body>
+    <div class="top hide-small">
+      <div class="bar xlarge black opacity hover-opacity-off" id="myNavbar">
+        <a href="index.html" class="bar-item button">BERANDA</a>
+        <a href="produk.html" class="bar-item button">PRODUK</a>
+        <a href="resep.html" class="bar-item button">RESEP</a>
+        <a href="about.html" class="bar-item button">TENTANG</a>
+        <a href="kontak.html" class="bar-item button">KONTAK</a>
+      </div>
+    </div>
+
+    <div class="container black padding-64 xxlarge" id="resep">
+      <div class="content">
+        <h1 class="center jumbo" style="margin-bottom: 64px">RESEP</h1>
+        <div class="row center border border-dark-grey">
+          <a href="javascript:void(0)" onclick="openResep('semua');" id="semuaLink">
+            <div class="col s4 tablink padding-large hover-red">SEMUA RESEP</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openResep('cemilan');">
+            <div class="col s4 tablink padding-large hover-red">CEMILAN</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openResep('sarapan');">
+            <div class="col s4 tablink padding-large hover-red">SARAPAN</div>
+          </a>
+        </div>
+
+        <div id="cemilan" class="container resep padding-32 white" data-kategori="cemilan">
+          <h1><b>VKELLOG'S Cornflakes choco almond ceres</b> <span class="right tag dark-grey round">Rp.25.000</span></h1>
+          <p class="kategori">Kategori: Cemilan</p>
+          <img src="gambar/cornflakes.webp" alt="Chocolate Balls" class="resep-image" />
+          <p class="text-grey">Bahan-bahan:</p>
+          <ul class="text-grey">
+            <li>75 gr cornflakes (½ bungkus)</li>
+            <li>125 gr dcc (6 keping)</li>
+            <li>1 sdm margarin (optional)</li>
+          </ul>
+          <button class="order-button">Pesan Sekarang</button>
+          <hr />
+
+          <h1><b>VKELLOG'S Siomay Ayam Udang</b> <span class="right tag dark-grey round">Rp.20.000</span></h1>
+          <p class="kategori">Kategori: Cemilan</p>
+          <img src="gambar/siomay.webp" alt="Siomay Ayam Udang" class="resep-image" />
+          <p class="text-grey">Bahan-bahan:</p>
+          <ul class="text-grey">
+            <li>250 gr fillet ayam bagian paha (aku pake dada)</li>
+            <li>125 gr udang</li>
+            <li>65 gr labu siam, parut</li>
+            <li>1 batang daun bawang, iris tipis</li>
+          </ul>
+          <button class="order-button">Pesan Sekarang</button>
+          <hr />
+        </div>
+
+        <div id="sarapan" class="container resep padding-32 white" data-kategori="sarapan">
+          <h1><b>VKELLOG'S Tumis Bihun</b> <span class="right tag dark-grey round">Rp.15.000</span></h1>
+          <p class="kategori">Kategori: Sarapan</p>
+          <img src="gambar/bihun.webp" alt="Tumis Bihun" class="resep-image" />
+          <p class="text-grey">Bahan-bahan:</p>
+          <ul class="text-grey">
+            <li>1 keping bihun</li>
+            <li>4 siung bawang merah, iris tipis</li>
+            <li>2 siung bawang putih, iris tipis</li>
+            <li>1 cabai hijau besar, iris serong</li>
+          </ul>
+          <button class="order-button">Pesan Sekarang</button>
+          <hr />
+
+          <h1><b>VKELLOG'S Pancake daun bawang wortel</b> <span class="right tag dark-grey round">Rp.20.000</span></h1>
+          <p class="kategori">Kategori: Sarapan</p>
+          <img src="gambar/pancake.webp" alt="Pancake daun bawang wortel" class="resep-image" />
+          <p class="text-grey">Bahan-bahan:</p>
+          <ul class="text-grey">
+            <li>3 butir telur</li>
+            <li>1 ikat daun bawang</li>
+            <li>1 cup wortel serut</li>
+            <li>3 sdm tepung terigu</li>
+          </ul>
+          <button class="order-button">Pesan Sekarang</button>
+          <hr />
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <footer class="center black padding-48 xxlarge">
+      <p>Copyrignt <a href="index.html" title="W3.CSS" class="hover-text-green">VKELLOG'S</a></p>
+    </footer>
+
+    <script src="js/resep.js"></script>
+  </body>
+</html>
